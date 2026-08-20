@@ -103,11 +103,12 @@ Content-Type: application/json
     "titulo": "Sistema não inicia",
     "prioridade": "Alta"
 }
-HTTP/1.1 404 Bad Request
+HTTP/1.1 400 Bad Request
 {
     "erro": "Dado inválido",
     "detalhes": [
         {
+            "codigo": 400,
             "campo": "descrição",
             "mensagem": "A descrição é obrigatória."
         }
